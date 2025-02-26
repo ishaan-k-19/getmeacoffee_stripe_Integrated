@@ -3,8 +3,8 @@
 A **Work Showcase & Fundraiser App** where users can post their projects, including GitHub repositories, images, videos, and YouTube links, while also receiving support from others through a secure fundraising system.
 
 ## 🚀 Live Demo
-Check out live app at: **[Visit Here](https://getmeacoffee.online/)**
-Check out a demo profile: **[Visit Here](https://getmeacoffee.online/ishaan)**
+- Check out live app at: **[Visit Here](https://getmeacoffee.online/)**
+- Check out a demo profile: **[Visit Here](https://getmeacoffee.online/ishaan)**
 
 ## ✨ Features
 - **Showcase Your Work**: Share projects with GitHub repos, images, videos, and YouTube links.
