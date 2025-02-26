@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GetMeACoffee
 
-## Getting Started
+A **Work Showcase & Fundraiser App** where users can post their projects, including GitHub repositories, images, videos, and YouTube links, while also receiving support from others through a secure fundraising system.
 
-First, run the development server:
+## 🚀 Live Demo
+Check out a demo profile: **[Visit Here](https://getmeacoffee.online/ishaan)**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+- **Showcase Your Work**: Share projects with GitHub repos, images, videos, and YouTube links.
+- **OAuth Authentication**: Secure sign-in via GitHub, Google, and Facebook (NextAuth).
+- **Fundraising Support**: Integrated Stripe payment processing to receive support from others.
+
+## 🛠 Tech Stack
+- **Frontend**: Next.js, Tailwind CSS
+- **Backend**: MongoDB, NextAuth.js, Cloudinary, Stripe
+- **Authentication**: OAuth (GitHub, Google, Facebook)
+
+---
+
+## 🛠 Setup Instructions
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/YOUR_GITHUB_USERNAME/GetMeACoffee.git
+cd GetMeACoffee
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Install Dependencies
+```sh
+npm install  # or yarn install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 3️⃣ Configure Environment Variables
+Create a `.env.local` file in the root directory and add the following variables:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```env
+GITHUB_ID="YOUR_GITHUB_ID"
+GITHUB_SECRET="YOUR_GITHUB_SECRET"
+GOOGLE_CLIENT_ID="YOUR_GOOGLE_CLIENT_ID"
+GOOGLE_CLIENT_SECRET="YOUR_GOOGLE_CLIENT_SECRET"
+FACEBOOK_CLIENT_ID="YOUR_FACEBOOK_CLIENT_ID"
+FACEBOOK_CLIENT_SECRET="YOUR_FACEBOOK_CLIENT_SECRET"
+MONGO_URI="YOUR_MONGO_URI"
+MONGODB_URI="YOUR_MONGODB_URI"
+NEXT_PUBLIC_KEY_ID="YOUR_RAZORPAY_KEY_ID"
+KEY_SECRET="YOUR_RAZORPAY_SECRET"
+NEXT_PUBLIC_PORT="http://localhost:3000"
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="YOUR_NEXTAUTH_SECRET"
+NEXT_PUBLIC_WEBHOOK_SECRET="YOUR_STRIPE_WEBHOOK_SECRET"
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="YOUR_CLOUDINARY_CLOUD_NAME"
+NEXT_PUBLIC_CLOUDINARY_PRESET="YOUR_CLOUDINARY_PRESET"
+CLOUDINARY_API_KEY="YOUR_CLOUDINARY_API_KEY"
+CLOUDINARY_API_SECRET="YOUR_CLOUDINARY_API_SECRET"
+STRIPE_SECRET_KEY="YOUR_STRIPE_SECRET_KEY"
+STRIPE_PUBLISHABLE_KEY="YOUR_STRIPE_PUBLISHABLE_KEY"
+```
 
-## Learn More
+### 🔑 How to Obtain Stripe API Keys
+1. Go to the [Stripe Dashboard](https://dashboard.stripe.com/).
+2. Navigate to **Developers > API Keys**.
+3. Copy your **Publishable Key** and **Secret Key** and add them to `.env.local`.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 4️⃣ Run the Development Server
+```sh
+npm run dev  # or yarn dev
+```
+Your app will be available at `http://localhost:3000`
